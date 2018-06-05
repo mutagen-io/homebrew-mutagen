@@ -1,6 +1,6 @@
 # homebrew-mutagen
 
-Homebrew formula for Mutagen
+Homebrew formula for Mutagen.
 
 
 # Usage
