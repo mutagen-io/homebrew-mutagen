@@ -24,9 +24,9 @@
 class Mutagen < Formula
   desc "Simple, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
-  version "0.3.1"
-  url "https://github.com/havoc-io/mutagen/releases/download/v0.3.1/mutagen_darwin_amd64_v0.3.1.tar.gz"
-  sha256 "1855667a9489c1e09a5d36a5cac9fe5ef2953df35486c685649dbd4410f74ddb"
+  version "0.4.0"
+  url "https://github.com/havoc-io/mutagen/releases/download/v0.4.0/mutagen_darwin_amd64_v0.4.0.tar.gz"
+  sha256 "7c6364f5da4003493e2bcf6a313f46a419c96cd8891ff3e6f03ecef8fe253ea2"
 
   def install
     # Generate a bash completion script in a subdirectory and install it to the
