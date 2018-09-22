@@ -28,6 +28,12 @@ class Mutagen < Formula
   url "https://github.com/havoc-io/mutagen/releases/download/v0.6.1/mutagen_darwin_amd64_v0.6.1.tar.gz"
   sha256 "2061a31a559b7396ec38b561e6b94d20f0d1b7fe7bd5c426499b897d833bbf07"
 
+  devel do
+    version "0.7.0-beta1"
+    url "https://github.com/havoc-io/mutagen/releases/download/v0.7.0-beta1/mutagen_darwin_amd64_v0.7.0-beta1.tar.gz"
+    sha256 "d3b352fc6406fe2d1437d3a94a1880ce9914424f7c9958fa71c1d4b4d34a4289"
+  end
+
   def install
     # Generate a bash completion script in a subdirectory and install it to the
     # bash completion directory.
