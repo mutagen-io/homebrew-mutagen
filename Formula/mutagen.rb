@@ -24,14 +24,14 @@
 class Mutagen < Formula
   desc "Simple, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
-  version "0.8.0"
-  url "https://github.com/havoc-io/mutagen/releases/download/v0.8.0/mutagen_darwin_amd64_v0.8.0.tar.gz"
-  sha256 "03146ec781b5a0415b7684055c9617bf739fb229f35ee8a263a6fe7b78cba238"
+  version "0.8.1"
+  url "https://github.com/havoc-io/mutagen/releases/download/v0.8.1/mutagen_darwin_amd64_v0.8.1.tar.gz"
+  sha256 "7b65c5a869bb1cceae79df7dcd4a05dbde5892a36b5eadd33e0b590c54da550c"
 
   devel do
-    version "0.8.0"
-    url "https://github.com/havoc-io/mutagen/releases/download/v0.8.0/mutagen_darwin_amd64_v0.8.0.tar.gz"
-    sha256 "03146ec781b5a0415b7684055c9617bf739fb229f35ee8a263a6fe7b78cba238"
+    version "0.8.1"
+    url "https://github.com/havoc-io/mutagen/releases/download/v0.8.1/mutagen_darwin_amd64_v0.8.1.tar.gz"
+    sha256 "7b65c5a869bb1cceae79df7dcd4a05dbde5892a36b5eadd33e0b590c54da550c"
   end
 
   def install
