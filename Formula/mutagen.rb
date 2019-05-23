@@ -29,9 +29,9 @@ class Mutagen < Formula
   sha256 "0a056ad3fc195fce0e3dbb9f7e6f7b4635b4835fcc5b0a0806d81a8ae2452f2c"
 
   devel do
-    version "0.9.0-beta1"
-    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.0-beta1/mutagen_darwin_amd64_v0.9.0-beta1.tar.gz"
-    sha256 "bb242d87507e534b81a9788d422b9c8578e4b4966dd4476c8eb32aeae728d111"
+    version "0.9.0-beta2"
+    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.0-beta2/mutagen_darwin_amd64_v0.9.0-beta2.tar.gz"
+    sha256 "3ff10965a9f7aa11284652ff0132ae8d63d6f04b059e6a525ebf3ef014fc290b"
   end
 
   def install
