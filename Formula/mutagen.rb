@@ -83,6 +83,12 @@ class Mutagen < Formula
 
       This support is experimental, so please provide feedback if you run into
       any issues.
+
+      Please note that the Mutagen daemon should be manually restarted after an
+      update using:
+
+        mutagen daemon stop
+        mutagen daemon start
     EOS
   end
 
