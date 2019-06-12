@@ -24,23 +24,23 @@
 class Mutagen < Formula
   desc "Simple, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
-  version "0.9.0"
+  version "0.9.1"
   if OS.mac?
-    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.0/mutagen_darwin_amd64_v0.9.0.tar.gz"
-    sha256 "74db7634c3d6a0338338c098052fe7c836aff9222927b69a17dd48814239e7be"
+    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_darwin_amd64_v0.9.1.tar.gz"
+    sha256 "e3ccd205057c6795a6e8275cbbf7b537dcd595ae7faad5ae824def6b26928c82"
   else
-    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.0/mutagen_linux_amd64_v0.9.0.tar.gz"
-    sha256 "e7b7def3ec1ba9dc9dfb57196eb80b0e981c2151b888a36fe2aece504b1465d6"
+    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_linux_amd64_v0.9.1.tar.gz"
+    sha256 "1f3cb229a3352f5a868d8bad9a7a5aec4ca1e8c2d3b50bdf5ea8a3be0af87fed"
   end
 
   devel do
-    version "0.9.0"
+    version "0.9.1"
     if OS.mac?
-      url "https://github.com/havoc-io/mutagen/releases/download/v0.9.0/mutagen_darwin_amd64_v0.9.0.tar.gz"
-      sha256 "74db7634c3d6a0338338c098052fe7c836aff9222927b69a17dd48814239e7be"
+      url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_darwin_amd64_v0.9.1.tar.gz"
+      sha256 "e3ccd205057c6795a6e8275cbbf7b537dcd595ae7faad5ae824def6b26928c82"
     else
-      url "https://github.com/havoc-io/mutagen/releases/download/v0.9.0/mutagen_linux_amd64_v0.9.0.tar.gz"
-      sha256 "e7b7def3ec1ba9dc9dfb57196eb80b0e981c2151b888a36fe2aece504b1465d6"
+      url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_linux_amd64_v0.9.1.tar.gz"
+      sha256 "1f3cb229a3352f5a868d8bad9a7a5aec4ca1e8c2d3b50bdf5ea8a3be0af87fed"
     end
   end
 
