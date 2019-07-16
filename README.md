@@ -8,4 +8,4 @@ Homebrew formula for Mutagen.
 You can install Mutagen using [Homebrew](https://brew.sh) using the following
 command:
 
-    $ brew install havoc-io/mutagen/mutagen
+    $ brew install mutagen-io/mutagen/mutagen
