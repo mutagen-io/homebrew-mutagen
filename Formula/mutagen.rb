@@ -22,24 +22,24 @@
 # We can re-evaluate all of this once the Go dependency management landscape
 # matures a bit, perhaps with Go 1.12.
 class Mutagen < Formula
-  desc "Simple, cross-platform, continuous, bidirectional file synchronization"
+  desc "Fast, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
   version "0.9.1"
   if OS.mac?
-    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_darwin_amd64_v0.9.1.tar.gz"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.9.1/mutagen_darwin_amd64_v0.9.1.tar.gz"
     sha256 "e3ccd205057c6795a6e8275cbbf7b537dcd595ae7faad5ae824def6b26928c82"
   else
-    url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_linux_amd64_v0.9.1.tar.gz"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.9.1/mutagen_linux_amd64_v0.9.1.tar.gz"
     sha256 "1f3cb229a3352f5a868d8bad9a7a5aec4ca1e8c2d3b50bdf5ea8a3be0af87fed"
   end
 
   devel do
     version "0.9.1"
     if OS.mac?
-      url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_darwin_amd64_v0.9.1.tar.gz"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.9.1/mutagen_darwin_amd64_v0.9.1.tar.gz"
       sha256 "e3ccd205057c6795a6e8275cbbf7b537dcd595ae7faad5ae824def6b26928c82"
     else
-      url "https://github.com/havoc-io/mutagen/releases/download/v0.9.1/mutagen_linux_amd64_v0.9.1.tar.gz"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.9.1/mutagen_linux_amd64_v0.9.1.tar.gz"
       sha256 "1f3cb229a3352f5a868d8bad9a7a5aec4ca1e8c2d3b50bdf5ea8a3be0af87fed"
     end
   end
