@@ -24,7 +24,7 @@
 class Mutagen < Formula
   desc "Fast, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
-  version "0.10.1"
+  version "0.10.2"
   if OS.mac?
     url "https://github.com/mutagen-io/mutagen/releases/download/v0.10.2/mutagen_darwin_amd64_v0.10.2.tar.gz"
     sha256 "c92f21b5137856e6250c46e40d7d63130f3800110138f1806431c93111a8bd9c"
