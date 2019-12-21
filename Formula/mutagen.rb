@@ -26,21 +26,21 @@ class Mutagen < Formula
   homepage "https://mutagen.io"
   version "0.10.1"
   if OS.mac?
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.10.1/mutagen_darwin_amd64_v0.10.1.tar.gz"
-    sha256 "f1ffc0cf2175f19d75f576f7b16ff4c9879ae93e27ed26a57ae1b16d225d8e12"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.10.2/mutagen_darwin_amd64_v0.10.2.tar.gz"
+    sha256 "c92f21b5137856e6250c46e40d7d63130f3800110138f1806431c93111a8bd9c"
   else
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.10.1/mutagen_linux_amd64_v0.10.1.tar.gz"
-    sha256 "2505bc721c98dc45e0410a58168e39b294c7df1868b4a60fbae157473e54f291"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.10.2/mutagen_linux_amd64_v0.10.2.tar.gz"
+    sha256 "2f240d687bc2e311a9b0a47ed1c097398442786d116973dd3b1f79873014bd5b"
   end
 
   devel do
-    version "0.11.0-alpha6"
+    version "0.11.0-beta2"
     if OS.mac?
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-alpha6/mutagen_darwin_amd64_v0.11.0-alpha6.tar.gz"
-      sha256 "ff6b48ef177cd5d153bc7aa6f124c2aa291cfa7b6bc7b2611a21af8da0b2b412"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-beta2/mutagen_darwin_amd64_v0.11.0-beta2.tar.gz"
+      sha256 "4d28ccaac9121019711c54ff299b2e049c65b76a8c4338d1194df4dc314bdbef"
     else
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-alpha6/mutagen_linux_amd64_v0.11.0-alpha6.tar.gz"
-      sha256 "8ed1a7c9eef30cd957289314cc5ce242f490a0bde8cb71bdc61777c12195e632"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-beta2/mutagen_linux_amd64_v0.11.0-beta2.tar.gz"
+      sha256 "ea6f19f132bc0f0a5cb93e3e4fe625d608e4beb43a99ce0bd3d4c4d7cada3009"
     end
   end
 
