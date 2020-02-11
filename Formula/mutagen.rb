@@ -34,13 +34,13 @@ class Mutagen < Formula
   end
 
   devel do
-    version "0.11.0-beta4"
+    version "0.11.0-rc1"
     if OS.mac?
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-beta4/mutagen_darwin_amd64_v0.11.0-beta4.tar.gz"
-      sha256 "3f3b161a7642579019ba2b6782cf93d7411ec890c0b93b544d4a0fe2acb606b4"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-rc1/mutagen_darwin_amd64_v0.11.0-rc1.tar.gz"
+      sha256 "2990381a7fc7b0b717554ba6f27ff8f8c41ff19915b74e0f152fd082f66103d3"
     else
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-beta4/mutagen_linux_amd64_v0.11.0-beta4.tar.gz"
-      sha256 "c3d9ab07ca1fb9f63ceedf9d34b6c9095cfc8a925143fe9d7d24d8f760e0e100"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.0-rc1/mutagen_linux_amd64_v0.11.0-rc1.tar.gz"
+      sha256 "e0454f11681fe901339157fcd9cfb8d5a69febc80b8580c65ff09a3ab65bd6f1"
     end
   end
 
