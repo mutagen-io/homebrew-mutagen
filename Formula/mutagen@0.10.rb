@@ -21,7 +21,7 @@
 #
 # We can re-evaluate all of this once the Go dependency management landscape
 # matures a bit, perhaps with Go 1.12.
-class MutagenAT10 < Formula
+class MutagenAT010 < Formula
   desc "Fast, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
   version "0.10.3"
