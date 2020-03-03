@@ -1,26 +1,3 @@
-# TODO: This formula isn't particularly idiomatic. It treats the release archive
-# as the source bundle and just copies the files in the bundle.
-#
-# There are two primary reasons for this: build complexity (Mutagen has a custom
-# build script that relies on it being checked out into GOPATH) and build time
-# (the build has to cross-compile agent binaries for each remote system). The
-# first might be solved by switching to vgo (and we'd also need to add an
-# additional build mode that only builds a release bundle for the current
-# platform), and the second might be solved by using the official Homebrew
-# bottle support (if we can find a place to host the bottles) (maybe we can even
-# get merged into homebrew-core at some point to host the bottles).
-#
-# There are also a few additional reasons for this, including the fact that
-# Mutagen uses cgo (and thus depends on having a sane toolchain available)
-# (though we may be able to get around this by using Go's dynamic cgo support
-# coming for macOS in Go 1.11), Mutagen only supports the most recent version of
-# Go (though it may be possible to specify a minimum Go version as a build
-# dependency) (but I can't find any examples of this), and Mutagen has a number
-# of Git submodules that don't come in the source tarball that GitHub generates
-# (though we might be able to use the GitDownloadStrategy that handles this).
-#
-# We can re-evaluate all of this once the Go dependency management landscape
-# matures a bit, perhaps with Go 1.12.
 class MutagenAT09 < Formula
   desc "Fast, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
