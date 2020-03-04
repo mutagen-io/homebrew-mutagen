@@ -39,15 +39,8 @@ class Mutagen < Formula
     # Install the mutagen binary into the bin directory.
     bin.install "mutagen"
 
-    # Install the agent bundle into the bin directory.
-    # TODO: I'd prefer to install this in the libexec directory for hygiene
-    # purposes. This is a bit of a pain to properly implement because Mutagen
-    # use's Go's os.Executable function, which on some platforms (including
-    # macOS) returns the symlink path used to launch the executable. Resolving
-    # the symlink would be necessary to compute the libexec path because libexec
-    # isn't linked into /usr/local by Homebrew. Other than that, probing for the
-    # bundle in libexec wouldn't be particularly difficult.
-    bin.install "mutagen-agents.tar.gz"
+    # Install the agent bundle into the libexec directory.
+    libexec.install "mutagen-agents.tar.gz"
   end
 
   def caveats
