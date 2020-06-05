@@ -8,23 +8,23 @@
 class Mutagen < Formula
   desc "Fast, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
-  version "0.11.4"
+  version "0.11.5"
   if OS.mac?
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.4/mutagen_darwin_amd64_v0.11.4.tar.gz"
-    sha256 "3f8d6ee901854e7a036c3f47855d3d6409ee066ab87fc30633f7a6223d8f532d"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.5/mutagen_darwin_amd64_v0.11.5.tar.gz"
+    sha256 "13401c461b8ab6b19e07dad9335b619b914de1bc31d44465d4d28171b3917a93"
   else
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.4/mutagen_linux_amd64_v0.11.4.tar.gz"
-    sha256 "d7ea06aeae3f05ea4f5b3b708f515dc6fda20ce54019322304770f5e981ec75d"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.5/mutagen_linux_amd64_v0.11.5.tar.gz"
+    sha256 "00112216f7d259ab94f951d5b3c644fe40a040e042811439781fcae810314575"
   end
 
   devel do
-    version "0.11.4"
+    version "0.11.5"
     if OS.mac?
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.4/mutagen_darwin_amd64_v0.11.4.tar.gz"
-      sha256 "3f8d6ee901854e7a036c3f47855d3d6409ee066ab87fc30633f7a6223d8f532d"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.5/mutagen_darwin_amd64_v0.11.5.tar.gz"
+      sha256 "13401c461b8ab6b19e07dad9335b619b914de1bc31d44465d4d28171b3917a93"
     else
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.4/mutagen_linux_amd64_v0.11.4.tar.gz"
-      sha256 "d7ea06aeae3f05ea4f5b3b708f515dc6fda20ce54019322304770f5e981ec75d"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.5/mutagen_linux_amd64_v0.11.5.tar.gz"
+      sha256 "00112216f7d259ab94f951d5b3c644fe40a040e042811439781fcae810314575"
     end
   end
 
