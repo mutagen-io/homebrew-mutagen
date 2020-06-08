@@ -18,6 +18,7 @@ class MutagenEdge < Formula
   end
 
   conflicts_with "mutagen", :because => "both install `mutagen` binaries"
+  conflicts_with "mutagen-beta", :because => "both install `mutagen` binaries"
 
   def install
     # Generate a bash completion script in a subdirectory and install it to the

@@ -5,7 +5,7 @@
 # agent binaries and (b) requires macOS cgo support to build agents that support
 # FSEvents. Issue (a) can likely be solved by bottling the compiled binaries,
 # but issue (b) doesn't have an elegant solution for Linux systems.
-class Mutagen < Formula
+class MutagenBeta < Formula
   desc "Fast, cross-platform, continuous, bidirectional file synchronization"
   homepage "https://mutagen.io"
   version "0.11.5"
@@ -17,7 +17,7 @@ class Mutagen < Formula
     sha256 "00112216f7d259ab94f951d5b3c644fe40a040e042811439781fcae810314575"
   end
 
-  conflicts_with "mutagen-beta", :because => "both install `mutagen` binaries"
+  conflicts_with "mutagen", :because => "both install `mutagen` binaries"
   conflicts_with "mutagen-edge", :because => "both install `mutagen` binaries"
 
   def install
