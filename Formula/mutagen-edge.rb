@@ -68,6 +68,8 @@ class MutagenEdge < Formula
 
         mutagen daemon stop
         mutagen daemon start
+
+      WARNING: Mutagen edge releases are unstable and entirely unsupported.
     EOS
   end
 

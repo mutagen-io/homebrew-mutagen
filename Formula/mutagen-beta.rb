@@ -68,6 +68,8 @@ class MutagenBeta < Formula
 
         mutagen daemon stop
         mutagen daemon start
+
+      WARNING: Mutagen beta releases are not officially supported.
     EOS
   end
 
