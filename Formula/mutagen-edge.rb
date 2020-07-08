@@ -21,11 +21,15 @@ class MutagenEdge < Formula
   conflicts_with "mutagen-beta", :because => "both install `mutagen` binaries"
 
   def install
-    # Generate a bash completion script in a subdirectory and install it to the
-    # bash completion directory.
+    # Generate and install shell completion scripts.
     mkdir "generated" do
-      system "../mutagen", "generate", "--bash-completion-script=mutagen"
-      bash_completion.install "mutagen"
+      system "../mutagen", "generate",
+        "--bash-completion-script=mutagen.bash",
+        "--fish-completion-script=mutagen.fish",
+        "--zsh-completion-script=_mutagen"
+      bash_completion.install "mutagen.bash"
+      fish_completion.install "mutagen.fish"
+      zsh_completion.install "_mutagen"
     end
 
     # Install the mutagen binary into the bin directory.
