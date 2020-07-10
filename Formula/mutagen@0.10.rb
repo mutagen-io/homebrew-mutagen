@@ -1,5 +1,5 @@
 class MutagenAT010 < Formula
-  desc "File synchronization and network forwarding for remote development"
+  desc "Fast file synchronization and network forwarding for remote development"
   homepage "https://mutagen.io"
   version "0.10.4"
   if OS.mac?

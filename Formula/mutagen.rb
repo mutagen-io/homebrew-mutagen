@@ -6,7 +6,7 @@
 # FSEvents. Issue (a) can likely be solved by bottling the compiled binaries,
 # but issue (b) doesn't have an elegant solution for Linux systems.
 class Mutagen < Formula
-  desc "File synchronization and network forwarding for remote development"
+  desc "Fast file synchronization and network forwarding for remote development"
   homepage "https://mutagen.io"
   version "0.11.5"
   if OS.mac?
