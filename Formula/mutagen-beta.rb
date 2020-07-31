@@ -8,24 +8,28 @@
 class MutagenBeta < Formula
   desc "Fast file synchronization and network forwarding for remote development"
   homepage "https://mutagen.io"
-  version "0.11.6"
+  version "0.12.0-beta1"
   if OS.mac?
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.6/mutagen_darwin_amd64_v0.11.6.tar.gz"
-    sha256 "2b82f4b233e1302963b0dde57ebc64523bf957ea39bb69cca5315f7c6773f0f5"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.12.0-beta1/mutagen_darwin_amd64_v0.12.0-beta1.tar.gz"
+    sha256 "acb5bdd8ddb05768bd5de0441bb8bd6fb63ebc01f95468a6d58fcc7bd429c0b6"
   else
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.6/mutagen_linux_amd64_v0.11.6.tar.gz"
-    sha256 "6ad6e81f7c665671678a4e97f11a5fb56357a581ab2b2d7fdffc64a002a23068"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.12.0-beta1/mutagen_linux_amd64_v0.12.0-beta1.tar.gz"
+    sha256 "60f28e8b167e2635e7e566ba4e27a67f9722ae8cbf8b313cabd37c5c3b685ead"
   end
 
   conflicts_with "mutagen", :because => "both install `mutagen` binaries"
   conflicts_with "mutagen-edge", :because => "both install `mutagen` binaries"
 
   def install
-    # Generate a bash completion script in a subdirectory and install it to the
-    # bash completion directory.
+    # Generate and install shell completion scripts.
     mkdir "generated" do
-      system "../mutagen", "generate", "--bash-completion-script=mutagen"
-      bash_completion.install "mutagen"
+      system "../mutagen", "generate",
+        "--bash-completion-script=mutagen.bash",
+        "--fish-completion-script=mutagen.fish",
+        "--zsh-completion-script=_mutagen"
+      bash_completion.install "mutagen.bash"
+      fish_completion.install "mutagen.fish"
+      zsh_completion.install "_mutagen"
     end
 
     # Install the mutagen binary into the bin directory.
