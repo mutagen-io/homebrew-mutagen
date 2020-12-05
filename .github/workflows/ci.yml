@@ -1,0 +1,18 @@
+# Set the workflow name.
+name: CI
+
+# Execute the workflow on pushes.
+on: push
+
+# Define the workflow jobs
+jobs:
+  macos:
+    name: Test Install
+    runs-on: macos-latest
+    steps:
+      - run: brew install mutagen-io/mutagen/mutagen
+      - run: brew uninstall mutagen
+      - run: brew install mutagen-io/mutagen/mutagen-beta
+      - run: brew uninstall mutagen-beta
+      - run: brew install mutagen-io/mutagen/mutagen-edge
+      - run: brew uninstall mutagen-edge
