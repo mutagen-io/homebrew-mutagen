@@ -1,11 +1,4 @@
 # homebrew-mutagen
 
-Homebrew formula for Mutagen.
-
-
-# Usage
-
-You can install Mutagen using [Homebrew](https://brew.sh) using the following
-command:
-
-    $ brew install mutagen-io/mutagen/mutagen
+Homebrew formulae for [Mutagen](https://github.com/mutagen-io/mutagen) and
+[Mutagen Compose](https://github.com/mutagen-io/mutagen-compose).

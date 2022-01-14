@@ -1,13 +1,18 @@
-class MutagenAT011 < Formula
+class MutagenAT012 < Formula
   desc "Fast file synchronization and network forwarding for remote development"
   homepage "https://mutagen.io"
-  version "0.11.8"
+  version "0.12.0"
   if OS.mac?
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.8/mutagen_darwin_amd64_v0.11.8.tar.gz"
-    sha256 "cc1afb10bc6d853bc7280e4a465a132dd7fe3f5b805928de489defe9961037f8"
+    if Hardware::CPU.arm?
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.12.0/mutagen_darwin_arm64_v0.12.0.tar.gz"
+      sha256 "401c101e3f81ab08d6c67a3bd03cd65065410ea17460e1631594288a7e6f0051"
+    else
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.12.0/mutagen_darwin_amd64_v0.12.0.tar.gz"
+      sha256 "530ad1868ee0e5b0a003ec67f37d3962e78b033b11a874e2f66751746f1c7ab6"
+    end
   else
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.11.8/mutagen_linux_amd64_v0.11.8.tar.gz"
-    sha256 "052d8918ee7f3307c46e398492071030ac9622cbfe8c2a6aabc29db87def18f5"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.12.0/mutagen_linux_amd64_v0.12.0.tar.gz"
+    sha256 "7a35891c0667105d43ce36b1ee406b3af21802ba5cd402cac47fcf5eff1ecad9"
   end
 
   conflicts_with "mutagen", :because => "both install `mutagen` binaries"
@@ -15,11 +20,15 @@ class MutagenAT011 < Formula
   conflicts_with "mutagen-edge", :because => "both install `mutagen` binaries"
 
   def install
-    # Generate a bash completion script in a subdirectory and install it to the
-    # bash completion directory.
+    # Generate and install shell completion scripts.
     mkdir "generated" do
-      system "../mutagen", "generate", "--bash-completion-script=mutagen"
-      bash_completion.install "mutagen"
+      system "../mutagen", "generate",
+        "--bash-completion-script=mutagen.bash",
+        "--fish-completion-script=mutagen.fish",
+        "--zsh-completion-script=_mutagen"
+      bash_completion.install "mutagen.bash"
+      fish_completion.install "mutagen.fish"
+      zsh_completion.install "_mutagen"
     end
 
     # Install the mutagen binary into the bin directory.

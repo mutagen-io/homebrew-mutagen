@@ -10,8 +10,8 @@ jobs:
     name: Test Install
     runs-on: macos-latest
     steps:
-      - run: brew install mutagen-io/mutagen/mutagen
-      - run: brew uninstall mutagen
+      - run: brew install mutagen-io/mutagen/mutagen mutagen-io/mutagen/mutagen-compose
+      - run: brew uninstall mutagen mutagen-compose
       - run: brew install mutagen-io/mutagen/mutagen-beta mutagen-io/mutagen/mutagen-compose-beta
       - run: brew uninstall mutagen-beta mutagen-compose-beta
       - run: brew install mutagen-io/mutagen/mutagen-edge

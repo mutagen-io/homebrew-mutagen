@@ -1,4 +1,4 @@
-class MutagenComposeBeta < Formula
+class MutagenCompose < Formula
   desc "Compose with Mutagen integration"
   homepage "https://github.com/mutagen-io/mutagen-compose"
   version "0.13.0"
@@ -15,9 +15,9 @@ class MutagenComposeBeta < Formula
     sha256 "a695e127a22085d49f8dd779abb371e1137575988e8e2cabedad819063c4c4f0"
   end
 
-  depends_on "mutagen-beta"
+  depends_on "mutagen"
 
-  conflicts_with "mutagen-compose", :because => "both install `mutagen-compose` binaries"
+  conflicts_with "mutagen-compose-beta", :because => "both install `mutagen-compose` binaries"
 
   def install
     # Install the mutagen-compose binary into the bin directory.

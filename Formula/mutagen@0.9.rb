@@ -65,6 +65,9 @@ class MutagenAT09 < Formula
 
         mutagen daemon stop
         mutagen daemon start
+
+      WARNING: Mutagen legacy releases are unsupported one month after the first
+      release in the next minor release series.
     EOS
   end
 
