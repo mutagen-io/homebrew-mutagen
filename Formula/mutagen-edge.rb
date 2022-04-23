@@ -8,18 +8,18 @@
 class MutagenEdge < Formula
   desc "Fast file synchronization and network forwarding for remote development"
   homepage "https://mutagen.io"
-  version "0.14.0-beta1"
+  version "0.14.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.14.0-beta1/mutagen_darwin_arm64_v0.14.0-beta1.tar.gz"
-      sha256 "0bdb36745b68381998ff614fa45d38010d18546e0cbfa1da0cf5ef095e81ab12"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.14.0/mutagen_darwin_arm64_v0.14.0.tar.gz"
+      sha256 "0773797d63978314c0fcffd9da7416db4bdaf6a290672d6530c4b47a07613fc6"
     else
-      url "https://github.com/mutagen-io/mutagen/releases/download/v0.14.0-beta1/mutagen_darwin_amd64_v0.14.0-beta1.tar.gz"
-      sha256 "bd0beb91b4a07fc36091eec9487955987cf42a892fecbe934877ad3a6930133a"
+      url "https://github.com/mutagen-io/mutagen/releases/download/v0.14.0/mutagen_darwin_amd64_v0.14.0.tar.gz"
+      sha256 "f4fb7da8a155ba267044084d20cc073632eaf9d05b1505f8eeb06fd484cacfd2"
     end
   else
-    url "https://github.com/mutagen-io/mutagen/releases/download/v0.14.0-beta1/mutagen_linux_amd64_v0.14.0-beta1.tar.gz"
-    sha256 "1cd63640fd53d6caae5a4374249806c44d7ecacd77e4c3e8bee31f1522365f35"
+    url "https://github.com/mutagen-io/mutagen/releases/download/v0.14.0/mutagen_linux_amd64_v0.14.0.tar.gz"
+    sha256 "eb9cb43cc78ec8a601c55e51f7ab176ab23f1f4738213c036d8fe9914aadd290"
   end
 
   conflicts_with "mutagen", :because => "both install `mutagen` binaries"
