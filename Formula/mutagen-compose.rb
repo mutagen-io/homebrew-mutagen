@@ -5,14 +5,14 @@ class MutagenCompose < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.15.1/mutagen-compose_darwin_arm64_v0.15.1.tar.gz"
-      sha256 ""
+      sha256 "fd3015faf634d1785909510606392ebf74b26ac7ba447b2d8974ccea4d399265"
     else
       url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.15.1/mutagen-compose_darwin_amd64_v0.15.1.tar.gz"
-      sha256 ""
+      sha256 "582a58aa76de23050c5bb63864ae9e249769a7922229ba71efcc374697e0e572"
     end
   else
     url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.15.1/mutagen-compose_linux_amd64_v0.15.1.tar.gz"
-    sha256 ""
+    sha256 "4377d59d52df2b4145608c50952e7be260309edf127f6625dcb43afec0d63aa1"
   end
 
   depends_on "mutagen"
