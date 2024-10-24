@@ -1,18 +1,18 @@
 class MutagenCompose < Formula
   desc "Compose with Mutagen integration"
   homepage "https://github.com/mutagen-io/mutagen-compose"
-  version "0.17.6"
+  version "0.18.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.17.6/mutagen-compose_darwin_arm64_v0.17.6.tar.gz"
-      sha256 "af52aae55363123d790601d282516e1b92592a9d42e70b05d0c30c3a917359cb"
+      url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.18.0/mutagen-compose_darwin_arm64_v0.18.0.tar.gz"
+      sha256 "4f98ea38cf06ee1742bf721794e1f7d6d438e7ee1b8e02448a2a827e32e9e861"
     else
-      url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.17.6/mutagen-compose_darwin_amd64_v0.17.6.tar.gz"
-      sha256 "b9ecd30313be96df0251129f4fc411130e5f7384a41b694cfcb95172d1296016"
+      url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.18.0/mutagen-compose_darwin_amd64_v0.18.0.tar.gz"
+      sha256 "987c619e2d0f56d2c9103a0659dce28faf3a331aebdadc5b20ed8d01aeda57da"
     end
   else
-    url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.17.6/mutagen-compose_linux_amd64_v0.17.6.tar.gz"
-    sha256 "3cd469a3e4cb579c25d09a92fd54aa1c5707879d277f3dfce0c5d76d8187f685"
+    url "https://github.com/mutagen-io/mutagen-compose/releases/download/v0.18.0/mutagen-compose_linux_amd64_v0.18.0.tar.gz"
+    sha256 "87d4ab81d7c5e778b427c9af09ad65dca049219944191c9f4c9d869b413d82ef"
   end
 
   depends_on "mutagen"
