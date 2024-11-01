@@ -1,4 +1,4 @@
-class MutagenCompose < Formula
+class MutagenComposeAT017 < Formula
   desc "Compose with Mutagen integration"
   homepage "https://github.com/mutagen-io/mutagen-compose"
   version "0.17.6"
@@ -15,8 +15,9 @@ class MutagenCompose < Formula
     sha256 "3cd469a3e4cb579c25d09a92fd54aa1c5707879d277f3dfce0c5d76d8187f685"
   end
 
-  depends_on "mutagen"
+  depends_on "mutagen@0.17"
 
+  conflicts_with "mutagen-compose", :because => "both install `mutagen-compose` binaries"
   conflicts_with "mutagen-compose-beta", :because => "both install `mutagen-compose` binaries"
 
   def install
